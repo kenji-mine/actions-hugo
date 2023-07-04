@@ -62,6 +62,7 @@ export async function installer(version: string): Promise<void> {
 
   //const toolAssets: string = await tc.downloadTool(toolURL);
   const toolAssets: string = 'https://github.com/gohugoio/hugo/releases/download/v0.115.1/hugo_0.115.1_Linux-64bit.tar.gz';
+  core.debug(`toolAssets: ${toolAssets}`);
 
   let toolBin = '';
   if (process.platform === 'win32') {
